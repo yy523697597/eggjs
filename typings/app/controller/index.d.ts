@@ -3,11 +3,13 @@
 
 import 'egg';
 import ExportEthan from '../../../app/controller/ethan';
+import ExportGirlsManager from '../../../app/controller/girlsManager';
 import ExportHome from '../../../app/controller/home';
 
 declare module 'egg' {
   interface IController {
     ethan: ExportEthan;
+    girlsManager: ExportGirlsManager;
     home: ExportHome;
   }
 }
